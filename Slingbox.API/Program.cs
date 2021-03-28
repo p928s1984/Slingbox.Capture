@@ -7,6 +7,7 @@ namespace Slingbox.API
     {
         public static void Main(string[] args)
         {
+            System.IO.Directory.SetCurrentDirectory(System.AppDomain.CurrentDomain.BaseDirectory);
             CreateWebHostBuilder(args).Build().Run();
         }
 
